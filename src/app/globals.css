@@ -1,21 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roca+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Definición de estilos globales */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary: #efd7d7;
+  --secondary: #8f7084;
+  --secondary-hover: #8f7084b8;
+  --accent: #f8f0ee;
+  --background: #f4f1eb;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
+  background-color: var(--background); /* Aplica el nuevo color de fondo */
+  color: var(--secondary); /* Asegura que el texto sea visible */
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roca One", serif;
+}
+.decorative {
+  font-family: "Hey Butterfly", cursive;
 }
