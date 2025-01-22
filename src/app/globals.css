@@ -7,20 +7,35 @@
 /* Definición de estilos globales */
 :root {
   --primary: #efd7d7;
+  --primary-hover: #efd7d7be;
   --secondary: #8f7084;
   --secondary-hover: #8f7084b8;
   --accent: #f8f0ee;
   --background: #f4f1eb;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: "Montserrat", Arial, sans-serif;
-  background-color: var(--background); /* Aplica el nuevo color de fondo */
-  color: var(--secondary); /* Asegura que el texto sea visible */
+  background-color: var(--background); 
+  color: var(--secondary); 
 }
+
+main {
+  flex: 1;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roca One", serif;
 }
+
 .decorative {
   font-family: "Hey Butterfly", cursive;
 }

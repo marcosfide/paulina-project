@@ -37,7 +37,7 @@ export default function Home() {
             </p>
             <a
               href="#servicios"
-              className="bg-secondary text-white font-bold py-3 px-10 rounded-full shadow-lg hover:bg-secondaryHover hover:shadow-xl transition duration-300"
+              className="bg-secondary text-white font-bold py-3 px-10 rounded-full shadow-sm hover:bg-secondaryHover hover:shadow-xl transition duration-300"
             >
               Descubre Más
             </a>
