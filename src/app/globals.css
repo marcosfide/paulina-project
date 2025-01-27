@@ -3,6 +3,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  .hover\:text-shadow:hover {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.015);
+  }
+}
 
 /* Definición de estilos globales */
 :root {

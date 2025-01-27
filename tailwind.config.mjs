@@ -18,6 +18,9 @@ export default {
         sans: ["Montserrat", "Arial", "sans-serif"],
         roca: ["Roca One", "serif"],
       },
+      textShadow: {
+        DEFAULT: "2px 2px 4px rgba(0, 0, 0, 0.3)",
+      },
     },
   },
   plugins: [],
