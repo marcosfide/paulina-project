@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <div>
       {/* Imagen de Bienvenida */}
-      <section className="bg-background flex justify-center items-center py-12 mt-20">
+      <section className="bg-background flex justify-center items-center py-12 px-2 mt-20">
         <img
           src="/banner-soy-paulina.png"
           alt="Soy Paulina - Bienvenida"
-          className="rounded-lg shadow-lg w-10/12"
+          className="rounded-lg shadow-lg w-full"
         />
       </section>
 

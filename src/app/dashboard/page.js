@@ -1,8 +1,7 @@
-import "./globals.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import SessionProvider from "../components/SessionProvider";
-import { AuthProvider } from "../context/AuthContext";
+import "../globals.css";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import SessionProvider from "../../components/SessionProvider"; // <-- Importamos el nuevo Provider
 
 export const metadata = {
   title: "Paulina | Psicoyoga y Coaching",
@@ -23,13 +22,11 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <AuthProvider>
-          <SessionProvider> {/* ENVOLVEMOS TODA LA APP */}
-            <Header />
-            <main>{children}</main>
-            <Footer />
-          </SessionProvider>
-        </AuthProvider>
+        <SessionProvider> {/* ENVOLVEMOS TODA LA APP */}
+          <Header />
+          <div>{children}</div>
+          <Footer />
+        </SessionProvider>
       </body>
     </html>
   );
